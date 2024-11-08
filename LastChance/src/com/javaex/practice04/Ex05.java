@@ -6,15 +6,18 @@ import java.util.Arrays;
 public class Ex05 {
 
 	public static void main(String[] args) {
-		int num[];
-		num = new int[5];
-		int sum = 0;
-		Scanner scanner = new Scanner(System.in); 
+		float sum = 0;
+		int[] num = new int[5];
+		Scanner scanner = new Scanner(System.in);
 		for (int i = 0; i < num.length; ++i) {
-			int number = scanner.nextInt();
-			number = num[i];
-			sum += number;
+			int number; 
+			number = scanner.nextInt();
+			num[i] = number;
+			sum += num[i];
+			}
+		System.out.println("평균은 "+(sum / 5)+" 입니다.");
+		
 		}
+			
 	}
-}
-
+		
